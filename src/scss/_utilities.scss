@@ -1,0 +1,47 @@
+@use 'config' as *;
+
+.logo {
+  font-family: 'VT323', monospace;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  color: $color-1;
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+
+.section-heading {
+  color: $color-1;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.sub-heading {
+  color: $color-1;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-p {
+  color: $color-1;
+  font-size: 2rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid rgba(51, 51, 51, 0.767);
+  padding: 0.5rem;
+  height: 40px;
+  width: 90px;
+  box-shadow: $button-shadow;
+  background-color: $color-3;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  font-family: 'VT323', monospace;
+
+  &:hover {
+    scale: 0.9;
+  }
+}

@@ -1,0 +1,181 @@
+@use 'config' as *;
+@use 'utilities' as *;
+@use 'nav' as *;
+@use 'footer' as *;
+@use 'projects' as *;
+@use 'about' as *;
+@use 'skills' as *;
+@use 'contact' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: $color-1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+// Showcase
+#showcase {
+  height: 100vh;
+  background: url(../img/laptop-red.png) no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  position: relative;
+
+  .showcase {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+
+    &-title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      width: auto;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+
+    &-item {
+      margin-right: 5rem;
+    }
+  }
+
+  #social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem;
+    position: absolute;
+    top: 21%;
+    left: 21%;
+    width: 55rem;
+
+    .links {
+      display: flex;
+
+      .link {
+        margin-right: 1rem;
+        font-size: 1.3rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: $color-1;
+          box-shadow: $button-shadow;
+          background-color: $color-3;
+          border: 2px solid rgba(51, 51, 51, 0.767);
+          height: 35px;
+          width: 35px;
+          padding: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: default;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            scale: 0.9;
+          }
+        }
+
+        button {
+          color: $color-1;
+          box-shadow: $button-shadow;
+          font-size: 1.3rem;
+          background-color: $color-3;
+          border: 2px solid rgba(51, 51, 51, 0.767);
+          height: 35px;
+          width: 35px;
+          padding: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: default;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            scale: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+// Tablet  * Only Horizontal *
+@media (max-width: 1025px) {
+  #showcase {
+    background-size: 130%;
+
+    .showcase {
+      left: 20%;
+    }
+
+    .navbar {
+      left: 21%;
+      top: 65%;
+    }
+
+    #social-links {
+      width: 45rem;
+      left: 14%;
+    }
+  }
+}
+
+// Mobile * Only Horizontal *
+@media (max-width: 1002px) {
+  #showcase {
+    background-size: 80%;
+    background-position: center top;
+
+    .showcase {
+      left: 30%;
+      top: 42%;
+
+      &-title {
+        font-size: 2rem;
+      }
+    }
+
+    .navbar {
+      left: 30%;
+      &-item {
+        margin-right: 1rem;
+      }
+    }
+
+    #social-links {
+      width: 30rem;
+      left: 25%;
+    }
+  }
+}

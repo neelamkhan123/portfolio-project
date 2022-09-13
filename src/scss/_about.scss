@@ -1,0 +1,65 @@
+@use 'utilities' as *;
+@use 'config' as *;
+
+#about {
+  background-color: $color-4;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+
+  .about-content {
+    width: 60rem;
+    margin-top: 7rem;
+  }
+
+  img {
+    margin-top: 7rem;
+    height: 800px;
+  }
+}
+
+// Media Queries
+
+// Tablet *Only Horizontal*
+@media (max-width: 1025px) {
+  #about {
+    .about-content {
+      width: 55rem;
+      .section-heading {
+        margin-left: 1rem;
+      }
+
+      .section-p {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+      }
+    }
+
+    img {
+      height: 600px;
+      margin-top: 11rem;
+    }
+  }
+}
+
+// Mobile *Only Horizontal*
+@media (max-width: 1002px) {
+  #about {
+    height: 500px;
+    .about-content {
+      width: 55rem;
+      .section-heading {
+        margin-left: 1rem;
+      }
+
+      .section-p {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+}

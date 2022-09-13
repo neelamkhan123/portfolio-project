@@ -1,0 +1,57 @@
+@use 'utilities' as *;
+@use 'config' as *;
+
+#projects {
+  background-color: $color-4;
+  height: 100vh;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+
+    .project {
+      a {
+        img {
+          height: 150px;
+          width: 240px;
+          border: 2px solid #333;
+          box-shadow: $button-shadow;
+          cursor: default;
+          transition: scale 0.5s ease-in-out;
+
+          &:hover {
+            scale: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+// Tablet *Only Horizontal*
+@media (max-width: 1025px) {
+  #projects {
+    .project-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+// Mobile *Only Horizontal*
+@media (max-width: 1002px) {
+  #projects {
+    height: 600px;
+    .project-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

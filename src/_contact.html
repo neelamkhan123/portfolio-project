@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neelam Khan | Contact Me</title>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inconsolata&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image png" href="./img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Secondary Nav -->
+    <nav id="secondary-nav">
+      <button class="close">X</button>
+      <ul class="navbar">
+        <li class="navbar-item projects">
+          <a href="./_projects.html">Projects</a>
+        </li>
+        <li class="navbar-item about"><a href="./_about.html">About</a></li>
+        <li class="navbar-item skills"><a href="./_skills.html">Skills</a></li>
+        <li class="navbar-item contact current">
+          <a href="./_contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contact me -->
+    <section id="contact">
+      <h1 class="section-heading">Contact me</h1>
+      <h3 class="sub-heading">neelamkhanwork@gmail.com</h3>
+      <form
+        id="form"
+        action="https://formsubmit.co/neelamkhanwork@gmail.com"
+        method="POST"
+      >
+        <div class="form-section name">
+          <label for="name">Name</label>
+          <input type="text" name="Name" id="name" />
+        </div>
+
+        <div class="form-section email">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="form-section subject">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" />
+        </div>
+
+        <div class="form-section message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-send">
+          Send<i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="links">
+        <li class="link">
+          <a href="https://github.com/neelamkhan123" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="link">
+          <a href="./_contact.html"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li class="link">
+          <a
+            href="https://www.linkedin.com/in/neelam-khan-6008901a5"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="link">
+          <a href="./Neelam_Khan_CV_PDF.pdf" target="_blank"
+            ><i class="fa-solid fa-download"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+@use 'utilities' as *;
+@use 'config' as *;
+
+#contact {
+  background-color: $color-4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-heading {
+    padding-top: 6rem;
+    margin-bottom: 0;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  #form {
+    display: grid;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+
+    .name {
+      grid-area: 1 / 1 / span 1 / span 1;
+      width: 20rem;
+    }
+
+    .email {
+      grid-area: 1 / 2 / span 1 / span 1;
+      width: 20rem;
+    }
+
+    .subject {
+      grid-area: 2 / 1 / span 1 / span 2;
+    }
+
+    .message {
+      grid-area: 3 / 1 / span 1 / span 2;
+    }
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 1.7rem;
+      }
+
+      input {
+        padding: 0.5rem;
+        box-shadow: $box-shadow;
+        font-family: 'VT323', monospace;
+        height: 3rem;
+        font-size: 1.5rem;
+        outline: none;
+        border: none;
+      }
+
+      #message {
+        height: 20rem;
+        border: none;
+        box-shadow: $box-shadow;
+        padding: 0.5rem;
+        font-family: 'VT323', monospace;
+        font-size: 1.5rem;
+        outline: none;
+      }
+    }
+
+    .btn-send {
+      width: 41rem;
+      grid-area: 4 / 1 / span 1 / span 2;
+
+      .fa-paper-plane {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+// Tablet *Only Horizontal*
+@media (max-width: 1025px) {
+  #contact {
+    #form {
+      grid-gap: 0.5rem;
+
+      .form-section {
+        label {
+          font-size: 1.5rem;
+        }
+
+        input {
+          font-size: 1.2rem;
+        }
+
+        #message {
+          height: 14rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      .btn-send {
+        width: 41rem;
+        grid-area: 4 / 1 / span 1 / span 2;
+
+        .fa-paper-plane {
+          font-size: 0.8rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Mobile *Only Horizontal*
+@media (max-width: 1002px) {
+  #contact {
+    height: 650px;
+
+    .section-heading {
+      font-size: 2rem;
+    }
+
+    .sub-heading {
+      font-size: 1rem;
+    }
+
+    #form {
+      display: grid;
+
+      .name {
+        grid-area: 1 / 1 / span 1 / span 1;
+        width: 20rem;
+      }
+
+      .email {
+        grid-area: 1 / 2 / span 1 / span 1;
+        width: 20rem;
+      }
+
+      .subject {
+        grid-area: 1 / 3 / span 1 / span 1;
+        width: 20rem;
+      }
+
+      .message {
+        grid-area: 3 / 1 / span 1 / span 3;
+      }
+
+      .form-section {
+        label {
+          font-size: 1.2rem;
+        }
+
+        input {
+          font-size: 1.2rem;
+        }
+
+        #message {
+          height: 14rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      .btn-send {
+        width: 61rem;
+        grid-area: 4 / 1 / span 1 / span 3;
+      }
+    }
+  }
+}

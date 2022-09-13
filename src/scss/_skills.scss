@@ -1,0 +1,82 @@
+@use 'utilities' as *;
+@use 'config' as *;
+
+#skills {
+  background-color: $color-4;
+  height: 100vh;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-heading {
+    text-align: center;
+  }
+
+  .skills-content {
+    background-color: white;
+    height: 500px;
+    width: 90vw;
+    padding: 1rem;
+    box-shadow: $box-shadow;
+
+    .skill {
+      margin-bottom: 2.5rem;
+      display: flex;
+
+      .sub-heading {
+        flex: 1;
+      }
+
+      .level {
+        border: 2px solid rgba(51, 51, 51, 0.767);
+        flex: 5;
+        height: 40px;
+        padding: 0.2rem;
+        display: flex;
+
+        .range {
+          border: 2px solid rgba(51, 51, 51, 0.767);
+          background-color: $color-1;
+          height: 30px;
+          width: 10px;
+          margin-right: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+// Tablet *Only Horizontal*
+@media (max-width: 1025px) {
+  #skills {
+    .skills-content {
+      height: 480px;
+      .skill {
+        flex-direction: column;
+        .sub-heading {
+          font-size: 1.3rem;
+          flex: 1;
+        }
+
+        .level {
+          height: 20px;
+
+          .range {
+            height: 10px;
+            width: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile *Only Horizontal*
+@media (max-width: 1002px) {
+  #skills {
+    height: 800px;
+  }
+}
