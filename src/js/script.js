@@ -34,10 +34,11 @@ $(function () {
   }
 
   $('.projects-index').click(function () {
-    zoomIn();
-    setTimeout(() => {
-      location.href = '_projects.html';
-    }, 500);
+    // zoomIn();
+    // setTimeout(() => {
+    //   location.href = '_projects.html';
+    // }, 500);
+    location.href = '_projects.html';
   });
 
   $('.about-index').click(function () {
