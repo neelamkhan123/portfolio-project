@@ -60,6 +60,25 @@ li {
 
     &-item {
       margin-right: 5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: 2px solid rgba(51, 51, 51, 0.767);
+      padding: 0.5rem;
+      height: 40px;
+      width: 90px;
+      box-shadow: $button-shadow;
+      background-color: $color-3;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        scale: 0.9;
+      }
+
+      a {
+        color: $color-1;
+        cursor: default;
+      }
     }
   }
 
