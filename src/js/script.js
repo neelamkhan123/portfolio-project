@@ -33,28 +33,28 @@ $(function () {
     $('#showcase').css('transition', 'scale 0.4s ease-in');
   }
 
-  $('.projects-index').on(function () {
+  $('.projects-index').on('click', function () {
     zoomIn();
     setTimeout(() => {
       location.href = '_projects.html';
     }, 500);
   });
 
-  $('.about-index').on(function () {
+  $('.about-index').on('click', function () {
     zoomIn();
     setTimeout(() => {
       location.href = '_about.html';
     }, 500);
   });
 
-  $('.skills-index').on(function () {
+  $('.skills-index').on('click', function () {
     zoomIn();
     setTimeout(() => {
       location.href = '_skills.html';
     }, 500);
   });
 
-  $('.contact-index').on(function () {
+  $('.contact-index').on('click', function () {
     zoomIn();
     setTimeout(() => {
       location.href = '_contact.html';
@@ -62,24 +62,24 @@ $(function () {
   });
 
   // Nav Page Transitions within eachother
-  $('.projects').on(function () {
+  $('.projects').on('click', function () {
     location.href = '_projects.html';
   });
 
-  $('.about').on(function () {
+  $('.about').on('click', function () {
     location.href = '_about.html';
   });
 
-  $('.skills').on(function () {
+  $('.skills').on('click', function () {
     location.href = '_skills.html';
   });
 
-  $('.contact').on(function () {
+  $('.contact').on('click', function () {
     location.href = '_contact.html';
   });
 
   // Close 'browser' and return to Showcase
-  $('.close').on(function () {
+  $('.close').on('click', function () {
     $(this)
       .parentsUntil('html')
       .css({ scale: '0', transition: 'scale 0.4s ease-out' });
