@@ -28,38 +28,38 @@ $(function () {
   }, 1900);
 
   // Nav Page Transitions
-  function zoomIn() {
-    $('#showcase').css('scale', '10');
-    $('#showcase').css('transition', 'scale 0.4s ease-in');
-  }
+  // function zoomIn() {
+  //   $('#showcase').css('scale', '10');
+  //   $('#showcase').css('transition', 'scale 0.4s ease-in');
+  // }
 
-  $('.projects-index').on('click', function () {
-    zoomIn();
-    setTimeout(() => {
-      location.href = '_projects.html';
-    }, 500);
-  });
+  // $('.projects-index').on('click', function () {
+  //   zoomIn();
+  //   setTimeout(() => {
+  //     location.href = '_projects.html';
+  //   }, 500);
+  // });
 
-  $('.about-index').on('click', function () {
-    zoomIn();
-    setTimeout(() => {
-      location.href = '_about.html';
-    }, 500);
-  });
+  // $('.about-index').on('click', function () {
+  //   zoomIn();
+  //   setTimeout(() => {
+  //     location.href = '_about.html';
+  //   }, 500);
+  // });
 
-  $('.skills-index').on('click', function () {
-    zoomIn();
-    setTimeout(() => {
-      location.href = '_skills.html';
-    }, 500);
-  });
+  // $('.skills-index').on('click', function () {
+  //   zoomIn();
+  //   setTimeout(() => {
+  //     location.href = '_skills.html';
+  //   }, 500);
+  // });
 
-  $('.contact-index').on('click', function () {
-    zoomIn();
-    setTimeout(() => {
-      location.href = '_contact.html';
-    }, 500);
-  });
+  // $('.contact-index').on('click', function () {
+  //   zoomIn();
+  //   setTimeout(() => {
+  //     location.href = '_contact.html';
+  //   }, 500);
+  // });
 
   // Nav Page Transitions within eachother
   $('.projects').on('click', function () {
