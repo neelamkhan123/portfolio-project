@@ -61,4 +61,9 @@ $(function () {
   // Footer Slide Up
   $('#footer').slideDown('slow');
   $('#footer').css('display', 'block');
+
+  // Mobile Version
+  $('.nav-icon').on('click', function () {
+    $('.navbar').toggle();
+  });
 });
